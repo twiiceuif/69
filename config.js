@@ -32,8 +32,6 @@ module.exports = {
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
-    BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
-    DISBGM: process.env.DISABLE_JID_BGM_FILTER === undefined ? true : process.env.DISABLE_JID_BGM_FILTER,
     AUTOSTICKER: process.env.AUTO_STICKER === undefined ? false : convertToBool(process.env.AUTO_STICKER),
     CAPTION_KEY: process.env.CP === undefined ?'⚜ 69 ⚜' : process.env.CP,
     MENUTEXT: process.env.MENU === undefined ?'⚜ 69 ⚜' : process.env.MENU,
