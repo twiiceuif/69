@@ -23,7 +23,7 @@ Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (asyn
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/1961540.jpg"),
             MessageType.image, 
-            { caption: "```BIP BOP!```\n\n```HEY, IT'S BOT```" }
+            { caption: Config.ALIVE_MESSAGE }
         )
     }
 }));
