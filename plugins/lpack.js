@@ -116,3 +116,4 @@ Asena.addCommand({pattern: 'neonlight ?(.*)', fromMe: false, dontAddCommandList:
 
     }));
 
+}
