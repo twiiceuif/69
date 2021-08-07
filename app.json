@@ -99,6 +99,16 @@
             "required": true,
             "value": "false"
         },
+        "CP": {
+            "description": "Caption",
+            "required": true,
+            "value": "Created by 69"
+        },
+        "MENU": {
+            "description": "Menu Header",
+            "required": true,
+            "value": "✨ 69 ✨"
+        },
         "REMOVE_BG_API_KEY": {
             "description": "https://remove.bg",
             "required": false
