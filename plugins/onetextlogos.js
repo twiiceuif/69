@@ -269,16 +269,6 @@ Asena.addCommand({pattern: 'tlight ?(.*)', fromMe: false, dontAddCommandList: tr
 
     }));
 
-Asena.addCommand({pattern: '😇 ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`😇&text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
 Asena.addCommand({pattern: 'book ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
