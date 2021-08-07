@@ -33,7 +33,7 @@ module.exports = {
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
     AUTOSTICKER: process.env.AUTO_STICKER === undefined ? false : convertToBool(process.env.AUTO_STICKER),
-    CAPTION_KEY: process.env.CP === undefined ?'Created by 69' : process.env.CP,
+    CAPTION_KEY: process.env.CP === undefined ?'✨ 69 ✨' : process.env.CP,
     MENUTEXT: process.env.MENU === undefined ?'✨ 69 ✨' : process.env.MENU,
     DISSTICKER: process.env.DISABLE_STICKER === undefined ? false : process.env.DISABLE_STICKER,
     NOLOG: process.env.NO_LOG === undefined ? 'false' : process.env.NO_LOG,
