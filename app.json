@@ -104,6 +104,11 @@
             "required": true,
             "value": "✨ 69 ✨"
         },
+        "ALIVE_IMG": {
+            "description": "Alive Image ; https://i.ibb.co",
+            "required": true,
+            "value": "https://ibb.co/m8tphkd.jpg"
+        },
         "MENU": {
             "description": "Menu Header",
             "required": true,
