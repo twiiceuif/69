@@ -19,6 +19,15 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'alive', fromMe: true,  deleteCommand: false,  desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
+        if (Config.ALIVEMSG == 'default') {
+
+            var image = await axios.get (Config.ALIVE_IMG, {responseType: 'arraybuffer'})
+
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "```HEY, I AM ~ ALIVE ~```"})
+
+    }
+    else {
+
             var image = await axios.get (Config.ALIVE_IMG, {responseType: 'arraybuffer'})
        
         await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.ALIVE_MESSAGE})
@@ -43,6 +52,15 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+
+        if (Config.ALIVEMSG == 'default') {
+
+            var image = await axios.get (Config.ALIVE_IMG, {responseType: 'arraybuffer'})
+
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "```HEY, I AM ~ ALIVE ~```"})
+
+    }
+    else {
 
             var image = await axios.get (Config.ALIVE_IMG, {responseType: 'arraybuffer'})
        
