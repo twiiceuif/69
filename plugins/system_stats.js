@@ -18,8 +18,6 @@ const Lang = Language.getString('system_stats');
 if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'alive', fromMe: true,  deleteCommand: false,  desc: Lang.ALIVE_DESC}, (async (message, match) => {
-
-        if (Config.ALIVEMSG == 'default') {
             
             var image = await axios.get (Config.ALIVE_IMG, {responseType: 'arraybuffer'})
        
@@ -52,8 +50,6 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
-
-        if (Config.ALIVEMSG == 'default') {
             
             var image = await axios.get (Config.ALIVE_IMG, {responseType: 'arraybuffer'})
        
