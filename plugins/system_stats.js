@@ -23,14 +23,14 @@ if (Config.WORKTYPE == 'private') {
 
             var image = await axios.get (Config.ALIVE_IMG, {responseType: 'arraybuffer'})
 
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "~ ALIVE ~"})
+        await message.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "~ ALIVE ~"})
 
     }
     else {
 
             var image = await axios.get (Config.ALIVE_IMG, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.ALIVE_MESSAGE})
+        await message.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.ALIVE_MESSAGE})
      }
     }));
 
@@ -57,14 +57,14 @@ else if (Config.WORKTYPE == 'public') {
 
             var image = await axios.get (Config.ALIVE_IMG, {responseType: 'arraybuffer'})
 
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "~ ALIVE ~"})
+        await message.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "~ ALIVE ~"})
 
     }
     else {
 
             var image = await axios.get (Config.ALIVE_IMG, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.ALIVE_MESSAGE})
+        await message.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.ALIVE_MESSAGE})
      }
     }));
 
