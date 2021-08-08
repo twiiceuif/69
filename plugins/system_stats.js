@@ -62,7 +62,7 @@ else if (Config.WORKTYPE == 'public') {
     }
     else {
             
-            var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
+            var image = await axios.get (Config.ALIVE_IMG, {responseType: 'arraybuffer'})
        
         await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.ALIVE_MESSAGE})
      }
