@@ -23,7 +23,7 @@ if (Config.WORKTYPE == 'private') {
 
             var image = await axios.get (Config.ALIVE_IMG, {responseType: 'arraybuffer'})
 
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "```HEY, I AM ~ ALIVE ~```"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "~ ALIVE ~})
 
     }
     else {
@@ -57,7 +57,7 @@ else if (Config.WORKTYPE == 'public') {
 
             var image = await axios.get (Config.ALIVE_IMG, {responseType: 'arraybuffer'})
 
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "```HEY, I AM ~ ALIVE ~```"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "~ ALIVE ~"})
 
     }
     else {
