@@ -120,8 +120,8 @@
         },
         "ALIVE_MESSAGE": {
             "description": "",
-            "required": false,
-            "value": "default"
+            "required": true,
+            "value": "```~ ALIVE ~```"
         },
         "BAN_MESSAGE": {
             "description": "",
