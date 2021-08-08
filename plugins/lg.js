@@ -7,8 +7,6 @@ const need = "```YOU MUST ENTER WORDS!```"
 
 if (Config.WORKTYPE == 'public') {
 
-//One Text Logos by Thevindu Hansara
-
 Asena.addCommand({pattern: 'naruto ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
