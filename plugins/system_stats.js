@@ -17,9 +17,9 @@ const Lang = Language.getString('system_stats');
 
 Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
     
-    if (Config.ALIVEMSG == 'default') {
+    if (Config.ALIVE_MESSAGE == 'default') {
         
-        if (Config.ALIVEMSG == 'default') {
+        if (Config.ALIVE_MESSAGE == 'default') {
             
             var image = await axios.get (Config.ALIVE_IMG, {responseType: 'arraybuffer'})
        
